@@ -82,7 +82,7 @@
                 </p>
 
                 <div class="contact-links">
-                    <a href="/cdn-cgi/l/email-protection#4437252321362f3120362d272f042329252d286a272b29" class="contact-link">
+                    <a href="mailto:sagerkudrick@gmail.com" class="contact-link">
                         <span>📧</span> Email
                     </a>
                     <a href="https://github.com/sagerkudrick" class="contact-link" target="_blank">
@@ -91,9 +91,9 @@
                     <a href="https://linkedin.com/in/sagerkudrick" class="contact-link" target="_blank">
                         <span>💼</span> LinkedIn
                     </a>
-                    <a href="/resume.pdf" class="contact-link contact-link-accent" target="_blank">
+                    <p href="/resume.pdf" class="contact-link contact-link-accent" target="_blank">
                         <span>📄</span> Contact For Resume
-                    </a>
+                    </p>
                 </div>
             </div>
 
@@ -208,7 +208,7 @@
                     <div class="experience-content">
                         <div class="experience-header">
                             <h3 class="experience-title">Independent Web Developer</h3>
-                            <span class="experience-company">Convention Event Project</span>
+                            <span class="experience-company">Niagara Falls Convention</span>
                         </div>
                         <p class="experience-context">
                             Sole developer and technical lead for a first-time convention's entire digital infrastructure — 
@@ -291,158 +291,7 @@
                     </div>
                 </article>
 
-                <div class="project-separator"></div>
-
-                <article class="project-card">
-                    <div class="project-content">
-                        <h3 class="project-title">Counter-Strike 2 Synthetic Dataset Pipeline + Object Detection</h3>
-                        <p class="project-tech">Python &bull; Blender &bull; Computer Vision &bull; YOLOv8 &bull; Docker</p>
-                        <p class="project-description">
-                            Automated Blender pipeline for generating synthetic labeled datasets and training real-time object detection models — zero manual annotation.
-                        </p>
-                        <ul class="project-description">
-                            <li>Built a <strong>custom minimal Blender Docker image</strong> from scratch — public images were broken and 3–4× oversized; supports fully headless automated rendering</li>
-                            <li>Automated Blender Python API workflow generating <strong>2,000+ synthetic images</strong> with varied poses, angles, and lighting — no manual labeling</li>
-                            <li>Trained YOLOv8 detection models achieving <strong>&gt;85% real-time accuracy</strong> in live game scenarios</li>
-                        </ul>
-                        <div class="tech-highlights">
-                            <span class="tech-tag">Custom Docker Image</span>
-                            <span class="tech-tag">Blender API</span>
-                            <span class="tech-tag">YOLOv8</span>
-                            <span class="tech-tag">Synthetic Data</span>
-                            <span class="tech-tag">Python Automation</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/sagerkudrick/cs2-dataset-gen" class="project-link" target="_blank">View Repository</a>
-                        </div>
-                    </div>
-                    <div class="project-images side-by-side">
-                        <div class="project-image"><span><img src="images/cs2_ingame.gif" alt="CS2 real-time object detection"></span></div>
-                        <div class="project-image"><span><img src="images/cs2_gen.gif" alt="Synthetic dataset generation pipeline"></span></div>
-                    </div>
-                </article>
-
-                <div class="project-separator"></div>
-
-                <article class="project-card">
-                    <div class="project-content">
-                        <h3 class="project-title">Privacy-Preserving Image &amp; Text Classification</h3>
-                        <p class="project-tech">Python &bull; Differential Privacy &bull; Opacus &bull; PyTorch</p>
-                        <p class="project-description">
-                            Neural network training with formal Differential Privacy guarantees — preventing dataset reconstruction and membership inference attacks with mathematically provable bounds.
-                        </p>
-                        <ul class="project-description">
-                            <li>Implemented DP-SGD with gradient clipping and calibrated noise injection, achieving <strong>ε=5.0 privacy guarantee</strong> while maintaining &gt;95% accuracy on MNIST</li>
-                            <li>Baseline accuracy &gt;98% vs. DP-trained &gt;95% — minimal trade-off with formal guarantees against model inversion attacks</li>
-                            <li>Directly informed the privacy accounting and training methodology used in the published IEEE Big Data paper</li>
-                        </ul>
-                        <div class="tech-highlights">
-                            <span class="tech-tag">Opacus (DP-SGD)</span>
-                            <span class="tech-tag">PyTorch</span>
-                            <span class="tech-tag">Privacy Accounting</span>
-                            <span class="tech-tag">Attack Mitigation</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/SagerKudrick/ml-dp" class="project-link" target="_blank">View Project</a>
-                        </div>
-                    </div>
-                    <div class="project-images single-image">
-                        <div class="project-image"><span><img src="images/mnist_predictions.gif" alt="MNIST differential privacy predictions"></span></div>
-                    </div>
-                </article>
-
-                <div class="project-separator"></div>
-
-                <article class="project-card">
-                    <div class="project-content">
-                        <h3 class="project-title">3D Magazine Rendering Pipeline</h3>
-                        <p class="project-tech">Python &bull; Blender &bull; Docker (Headless) &bull; Automation</p>
-                        <p class="project-description">
-                            Automated pipeline converting vintage gaming magazines into animated 3D renders — fully headless, runs end-to-end from raw PDF to platform-optimized video without manual steps.
-                        </p>
-                        <ul class="project-description">
-                            <li>Scraped and processed PDFs into high-resolution textures for 3D mesh mapping</li>
-                            <li>Scripted Blender Python API to automate texture application, lighting, and camera animation</li>
-                            <li>Runs in a <strong>custom headless Docker container</strong> — fully automated, no manual steps after initial setup</li>
-                            <li>Generates platform-optimized exports for Instagram, Twitter, and TikTok</li>
-                        </ul>
-                        <div class="tech-highlights">
-                            <span class="tech-tag">Blender Python API</span>
-                            <span class="tech-tag">Docker (Headless)</span>
-                            <span class="tech-tag">PDF Processing</span>
-                            <span class="tech-tag">Texture Mapping</span>
-                        </div>
-                        <div class="project-links">
-                            <p class="project-link-note">Core assets private to preserve originality</p>
-                        </div>
-                    </div>
-                    <div class="project-images">
-                        <div class="project-image pipeline-tall"><span><img src="images/blender_render.gif" alt="3D magazine Blender render"></span></div>
-                    </div>
-                </article>
-
-                <div class="project-separator"></div>
-
-                <!-- CS 1v1 Gamemode -->
-                <article class="project-card">
-                    <div class="project-content">
-                        <h3 class="project-title">Counter-Strike 1v1 Gamemode — Full Stack Server &amp; Web Platform</h3>
-                        <p class="project-tech">C# &bull; MySQL &bull; PHP &bull; SSH &bull; Linux &bull; VMs</p>
-                        <p class="project-description">
-                            Custom Counter-Strike gamemode with a full backend — live server, database, and web frontend built and managed entirely from scratch.
-                        </p>
-                        <ul class="project-description">
-                            <li>Developed the gamemode plugin in SourcePawn (.sp) using SourceMod, implementing 1v1 match logic, item stake handling, round flow and win validation.</li>
-                            <li>Set up and administered the <strong>Linux game server via SSH and FileZilla</strong> — handled deployment, file management, and live updates</li>
-                            <li>Designed and maintained a <strong>MySQL database</strong> tracking player stats, match history, and rankings with a PHP web frontend</li>
-                            <li>Used <strong>virtual machines to run multiple game clients simultaneously</strong> for testing match flows, edge cases, and database integrity across accounts</li>
-                        </ul>
-                        <div class="tech-highlights">
-                            <span class="tech-tag">C# / SourceMod</span>
-                            <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">PHP</span>
-                            <span class="tech-tag">Linux / SSH</span>
-                            <span class="tech-tag">VirtualBox</span>
-                        </div>
-                    </div>
-                    <div class="project-images">
-                        <div class="project-images single-image">
-                            <div class="project-image pipeline-tall"><span><img src="images/exchange.png" alt="Counter-Strike 1v1 Gamemode"></span></div>
-                        </div>
-                    </div>
-                </article>
-
-                <div class="project-separator"></div>
-
-                <!-- Selenium Scraper + RAG -->
-                <article class="project-card">
-                    <div class="project-content">
-                        <h3 class="project-title">Canada Games Web Scraper &amp; RAG Question-Answering System</h3>
-                        <p class="project-tech">Python &bull; Selenium &bull; MySQL &bull; RAG &bull; LLM</p>
-                        <p class="project-description">
-                            End-to-end pipeline from web scraping to a retrieval-augmented generation system — scraped a large structured dataset, stored it, then built a QA interface on top.
-                        </p>
-                        <ul class="project-description">
-                            <li>Built a <strong>Selenium scraper</strong> to collect Canada Games athlete and event data across <strong>10,000+ records and fields</strong> from a live web source</li>
-                            <li>Cleaned and loaded the dataset into a structured database with normalized schemas</li>
-                            <li>Developed a <strong>RAG-based question-answering system</strong> trained on the scraped data — enabling natural language queries over the full dataset</li>
-                        </ul>
-                        <div class="tech-highlights">
-                            <span class="tech-tag">Selenium</span>
-                            <span class="tech-tag">Web Scraping</span>
-                            <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">RAG</span>
-                            <span class="tech-tag">Python</span>
-                        </div>
-                    </div>
-                    <div class="project-images">
-                    <div class="project-images single-image">
-                        <div class="project-image"><span><img src="images/canada_games.png" alt="Canada Games Web Scraper & RAG"></span></div>
-                    </div>
-                    </div>
-                </article>
-
-                <div class="project-separator"></div>
+            <div class="project-separator"></div>
 
                 <!-- WoW Chart Race -->
                 <article class="project-card">
@@ -516,7 +365,133 @@
                             </video>
                         </div>
                     </div>
+                </article>      
+                
+                <div class="project-separator"></div>
+
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Counter-Strike 2 Synthetic Dataset Pipeline + Object Detection</h3>
+                        <p class="project-tech">Python &bull; Blender &bull; Computer Vision &bull; YOLOv8 &bull; Docker</p>
+                        <p class="project-description">
+                            Automated Blender pipeline for generating synthetic labeled datasets and training real-time object detection models — zero manual annotation.
+                        </p>
+                        <ul class="project-description">
+                            <li>Built a <strong>custom minimal Blender Docker image</strong> from scratch — public images were broken, bloated, and 3–4× oversized; supports fully headless automated rendering</li>
+                            <li>Automated Blender Python API workflow generating <strong>2,000+ synthetic images</strong> with varied poses, angles, and lighting — no manual labeling</li>
+                            <li>Trained YOLOv8 detection models achieving <strong>&gt;85% real-time accuracy</strong> in live game scenarios</li>
+                        </ul>
+                        <div class="tech-highlights">
+                            <span class="tech-tag">Custom Docker Image</span>
+                            <span class="tech-tag">Blender API</span>
+                            <span class="tech-tag">YOLOv8</span>
+                            <span class="tech-tag">Synthetic Data</span>
+                            <span class="tech-tag">Python Automation</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/sagerkudrick/cs2-dataset-gen" class="project-link" target="_blank">View Repository</a>
+                        </div>
+                    </div>
+                    <div class="project-images side-by-side">
+                        <div class="project-image"><span><img src="images/cs2_ingame.gif" alt="CS2 real-time object detection"></span></div>
+                        <div class="project-image"><span><img src="images/cs2_gen.gif" alt="Synthetic dataset generation pipeline"></span></div>
+                    </div>
                 </article>
+
+                <div class="project-separator"></div>
+
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Privacy-Preserving Image &amp; Text Classification</h3>
+                        <p class="project-tech">Python &bull; Differential Privacy &bull; Opacus &bull; PyTorch</p>
+                        <p class="project-description">
+                            Neural network training with formal Differential Privacy guarantees — preventing dataset reconstruction and membership inference attacks with mathematically provable bounds.
+                        </p>
+                        <ul class="project-description">
+                            <li>Implemented DP-SGD with gradient clipping and calibrated noise injection, achieving <strong>ε=5.0 privacy guarantee</strong> while maintaining &gt;95% accuracy on MNIST</li>
+                            <li>Baseline accuracy &gt;98% vs. DP-trained &gt;95% — minimal trade-off with formal guarantees against model inversion attacks</li>
+                            <li>Directly informed the privacy accounting and training methodology used in the published IEEE Big Data paper</li>
+                        </ul>
+                        <div class="tech-highlights">
+                            <span class="tech-tag">Opacus (DP-SGD)</span>
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">Privacy Accounting</span>
+                            <span class="tech-tag">Attack Mitigation</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/SagerKudrick/ml-dp" class="project-link" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-images single-image">
+                        <div class="project-image"><span><img src="images/mnist_predictions.gif" alt="MNIST differential privacy predictions"></span></div>
+                    </div>
+                </article>
+
+                <div class="project-separator"></div>
+
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">3D Magazine Rendering Pipeline</h3>
+                        <p class="project-tech">Python &bull; Blender &bull; Docker (Headless) &bull; Automation</p>
+                        <p class="project-description">
+                            Automated pipeline converting vintage gaming magazines into animated 3D renders — fully headless, runs end-to-end from raw PDF to platform-optimized video without manual steps.
+                        </p>
+                        <ul class="project-description">
+                            <li>Scraped and processed PDFs into high-resolution textures for 3D mesh mapping</li>
+                            <li>Scripted Blender Python API to automate texture application, lighting, and camera animation</li>
+                            <li>Runs in a <strong>custom headless Docker container</strong> — fully automated, no manual steps after initial setup</li>
+                            <li>Generates platform-optimized exports for Instagram, Twitter, and TikTok</li>
+                            <li>OCR implementation to scan PDFs for specific text, streamlining targeted game and magazine selection</li>
+                        </ul>
+                        <div class="tech-highlights">
+                            <span class="tech-tag">Blender Python API</span>
+                            <span class="tech-tag">Docker (Headless)</span>
+                            <span class="tech-tag">PDF Processing</span>
+                            <span class="tech-tag">Texture Mapping</span>
+                        </div>
+                        <div class="project-links">
+                            <p class="project-link-note">Core assets private to preserve originality</p>
+                        </div>
+                    </div>
+                    <div class="project-images">
+                        <div class="project-image pipeline-tall"><span><img src="images/blender_render.gif" alt="3D magazine Blender render"></span></div>
+                    </div>
+                </article>
+
+                <div class="project-separator"></div>
+
+                <!-- CS 1v1 Gamemode -->
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Counter-Strike 1v1 Gamemode — Full Stack Server &amp; Web Platform</h3>
+                        <p class="project-tech">C# &bull; MySQL &bull; PHP &bull; SSH &bull; Linux &bull; VMs</p>
+                        <p class="project-description">
+                            Custom Counter-Strike gamemode with a full backend — live server, database, and web frontend built and managed entirely from scratch.
+                        </p>
+                        <ul class="project-description">
+                            <li>Developed the gamemode plugin in SourcePawn (.sp) using SourceMod, implementing 1v1 match logic, item stake handling, round flow and win validation.</li>
+                            <li>Set up and administered the <strong>Linux game server via SSH and FileZilla</strong> — handled deployment, file management, and live updates</li>
+                            <li>Designed and maintained a <strong>MySQL database</strong> tracking player stats, match history, and rankings with a PHP web frontend</li>
+                            <li>Used <strong>virtual machines to run multiple game clients simultaneously</strong> for testing match flows, edge cases, and database integrity across accounts</li>
+                            <li>Created <strong>stored procedures and triggers</strong> to automate common database operations and enforce data integrity and <strong>avoid SQL injections and common vulnerabilities</strong></li>
+                        </ul>
+                        <div class="tech-highlights">
+                            <span class="tech-tag">C# / SourceMod</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">Linux / SSH</span>
+                            <span class="tech-tag">VirtualBox</span>
+                        </div>
+                    </div>
+                    <div class="project-images">
+                        <div class="project-images single-image">
+                            <div class="project-image pipeline-tall"><span><img src="images/exchange.png" alt="Counter-Strike 1v1 Gamemode"></span></div>
+                        </div>
+                    </div>
+                </article>
+
+                <div class="project-separator"></div>
+
 
             </div>
         </section>
@@ -610,12 +585,10 @@
                 <div class="education-item">
                     <div class="education-degree">B.Sc. (Hons) Computer Science — Software Engineering Concentration</div>
                     <div class="education-school">Brock University &mdash; St. Catharines, ON</div>
-                    <div class="education-period">2019 – 2023</div>
                 </div>
                 <div class="education-item">
                     <div class="education-degree">Computer Programming Analyst Diploma</div>
                     <div class="education-school">Niagara College &mdash; Welland, ON</div>
-                    <div class="education-period">2015 – 2019</div>
                 </div>
             </div>
         </section>
@@ -628,7 +601,7 @@
                 <h3 class="footer-title">Let's Work Together</h3>
                 <p class="footer-text">Open to full-time roles in DevOps, ML engineering, software development, or security. Based in St. Catharines, ON — open to remote.</p>
                 <div class="footer-links">
-                    <a href="/cdn-cgi/l/email-protection#91e2f0f6f4e3fae4f5e3f8f2fad1f6fcf0f8fdbff2fefc" class="contact-link">Get In Touch</a>
+                    <a href="mailto:sagerkudrick@gmail.com" class="contact-link">Get In Touch</a>
                     <!-- <a href="/resume.pdf" class="contact-link" target="_blank">Download Resume</a> -->
                 </div>
             </div>
