@@ -3,26 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sager Kudrick - Software & AI/ML Developer</title>
+
+    <title>Sager Kudrick | Software Developer — ML, DevOps &amp; Cloud</title>
+    <meta name="description" content="Software developer with published ML research (IEEE Big Data 2024), DevOps/cloud infrastructure experience, and a background in application security. B.Sc. Computer Science, Brock University.">
+    <meta name="keywords" content="software developer, ML engineer, DevOps, Docker, CI/CD, cloud infrastructure, differential privacy, graph neural networks, WebGPU, PyTorch, Brock University, IEEE Big Data, application security">
+    <meta name="author" content="Sager Kudrick">
+    <link rel="canonical" href="https://sagerkudrick.com/">
+
+    <meta property="og:title" content="Sager Kudrick | Software Developer — ML, DevOps &amp; Cloud">
+    <meta property="og:description" content="Published ML researcher and software developer specializing in DevOps, cloud infrastructure, and ML systems. IEEE Big Data 2024.">
+    <meta property="og:url" content="https://sagerkudrick.com/">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Sager Kudrick | Software Developer — ML, DevOps &amp; Cloud">
+    <meta name="twitter:description" content="Published ML researcher. DevOps, cloud infrastructure, ML systems. Open to work.">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sager Kudrick",
+      "url": "https://sagerkudrick.com",
+      "sameAs": [
+        "https://github.com/sagerkudrick",
+        "https://linkedin.com/in/sagerkudrick",
+        "https://ieeexplore.ieee.org/document/10825799"
+      ],
+      "jobTitle": "Software Developer",
+      "alumniOf": "Brock University",
+      "knowsAbout": ["Machine Learning", "DevOps", "Docker", "CI/CD", "Differential Privacy", "Cloud Infrastructure", "Application Security", "Graph Neural Networks", "WebGPU"]
+    }
+    </script>
+
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.amplitude.com/libs/analytics-browser-2.11.1-min.js.gz"></script><script src="https://cdn.amplitude.com/libs/plugin-session-replay-browser-1.25.15-min.js.gz"></script><script>window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));window.amplitude.init('2aa14805cc129eb5e73e840f94cfb5a7', {"autocapture":{"elementInteractions":true}});</script>
+    <script src="https://cdn.amplitude.com/libs/analytics-browser-2.11.1-min.js.gz"></script>
+    <script src="https://cdn.amplitude.com/libs/plugin-session-replay-browser-1.25.15-min.js.gz"></script>
+    <script>window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));window.amplitude.init('2aa14805cc129eb5e73e840f94cfb5a7', {"autocapture":{"elementInteractions":true}});</script>
 </head>
 <body>
+
+    <!-- STICKY NAV -->
+    <nav class="sitenav" id="sitenav">
+        <div class="sitenav-inner">
+            <a class="sitenav-brand" href="#hero">SK</a>
+            <div class="sitenav-links">
+                <a class="sitenav-link" href="#experience">Experience</a>
+                <a class="sitenav-link" href="#projects">Projects</a>
+                <a class="sitenav-link" href="#publications">Research</a>
+                <a class="sitenav-link" href="#stack">Stack</a>
+                <a class="sitenav-link" href="#education">Education</a>
+            </div>
+            <a href="/resume.pdf" class="sitenav-resume" target="_blank">Resume ↓</a>
+        </div>
+    </nav>
+
     <div class="container">
-        <!-- Hero / About Section -->
-        <section class="hero">
+
+        <!-- HERO -->
+        <section class="hero" id="hero">
             <div class="hero-content">
-                <div class="greeting">Researcher / Developer</div>
+
+                <div class="open-badge">
+                    <span class="open-dot"></span>
+                    Open to Full-Time Opportunities
+                </div>
+
+                <div class="greeting">Software Developer</div>
                 <h1>Sager Kudrick</h1>
-                <p class="tagline">Machine Learning & Artificial Intelligence</p>
+                <p class="tagline">ML Research &bull; DevOps &amp; Cloud &bull; Application Security</p>
+
                 <p class="about-text">
-                    AI/ML Researcher & Developer specializing in machine learning and AI systems. My research focuses on developing 
-                    novel approaches to complex computational problems, with published work in leading conferences. 
-                    I enjoy distributed training, GPU accelerated training, and improving workflows for ML model training and deployment.
+                    B.Sc. Computer Science (Software Engineering), Brock University. I build and ship across a few domains — 
+                    ML systems with published research at IEEE Big Data 2024, Docker/CI/CD infrastructure, cloud deployments, 
+                    and application security. I'm drawn to problems with a clear engineering payoff: cutting cloud costs, 
+                    making training pipelines faster, or making systems harder to exploit.
                 </p>
+
                 <div class="contact-links">
-                    <a href="mailto:sagerkudrick@gmail.com" class="contact-link">
+                    <a href="/cdn-cgi/l/email-protection#4437252321362f3120362d272f042329252d286a272b29" class="contact-link">
                         <span>📧</span> Email
                     </a>
                     <a href="https://github.com/sagerkudrick" class="contact-link" target="_blank">
@@ -31,314 +91,545 @@
                     <a href="https://linkedin.com/in/sagerkudrick" class="contact-link" target="_blank">
                         <span>💼</span> LinkedIn
                     </a>
-                    <!-- <a href="/resume.pdf" class="contact-link" target="_blank">
+                    <a href="/resume.pdf" class="contact-link contact-link-accent" target="_blank">
                         <span>📄</span> Resume
-                    </a> -->
+                    </a>
                 </div>
             </div>
-            
-            <!-- Quick Stats -->
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <div class="stat-value">Privacy-First ML</div>
-                    <div class="stat-label">Differential Privacy • DP-GNN • Published Research</div>
+
+            <!-- Interest Cards -->
+            <div class="looking-for-grid">
+                <div class="lf-card">
+                    <div class="lf-icon">⚙️</div>
+                    <div class="lf-label">DevOps &amp; Cloud</div>
+                    <div class="lf-desc">Docker, CI/CD pipelines, Linux infrastructure, cloud deployment, NGINX, container orchestration</div>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-value">High-Performance Inference</div>
-                    <div class="stat-label">WebGPU • ONNX • Client-Side Deployment</div>
+                <div class="lf-card">
+                    <div class="lf-icon">🧠</div>
+                    <div class="lf-label">ML Engineering</div>
+                    <div class="lf-desc">Training pipelines, distributed GPU workloads, model optimization, inference systems — with published research</div>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-value">CV + Reinforcement Learning</div>
-                    <div class="stat-label">Synthetic Data • YOLOv8 • RL Agents</div>
+                <div class="lf-card">
+                    <div class="lf-icon">🔐</div>
+                    <div class="lf-label">Application Security</div>
+                    <div class="lf-desc">XSS/SQLi prevention, secure coding, threat modelling — exploring Burp Suite and deeper AppSec tooling</div>
                 </div>
             </div>
-            <div class="scroll-indicator"></div>
-        </section>
 
-        <section class="tech-section">
-            <h2 class="section-title">AI Skills</h2>
-            <div class="expertise-grid">
-                
-                <div class="expertise-card">
-                    <div class="expertise-icon">⚡</div>
-                    <h3>High-Performance ML</h3>
-                    <p>Distributed training, GPU acceleration, and client-side inference with WebGPU for cost-effective deployment</p>
-                    <div class="expertise-tags">
-                        <span>PyTorch</span>
-                        <span>ONNX</span>
-                        <span>WebGPU</span>
-                    </div>
+            <!-- IEEE Publication Callout -->
+            <div class="pub-hero-callout">
+                <div class="pub-hero-label">
+                    <span class="pub-icon">📄</span>
+                    Peer-Reviewed Publication
                 </div>
-
-                <div class="expertise-card">
-                    <div class="expertise-icon">🔒</div>
-                    <h3>Privacy-Preserving AI</h3>
-                    <p>Differential privacy techniques for GNNs and neural networks with formal privacy guarantees</p>
-                    <div class="expertise-tags">
-                        <span>DP-SGD</span>
-                        <span>Graph Neural Networks</span>
-                        <span>Privacy Accounting</span>
-                    </div>
-                </div>
-
-                <div class="expertise-card">
-                    <div class="expertise-icon">🎮</div>
-                    <h3>Computer Vision & RL</h3>
-                    <p>Synthetic data generation, object detection, and reinforcement learning for real-time applications</p>
-                    <div class="expertise-tags">
-                        <span>YOLOv8</span>
-                        <span>Synthetic Data</span>
-                        <span>RL Agents</span>
-                    </div>
-                </div>
-
+                <h3>Leveraging Graph Clustering for Differentially Private Graph Neural Networks</h3>
+                <p>Sager Kudrick, Renata Dividino &mdash; <strong>IEEE International Conference on Big Data, 2024</strong></p>
+                <p class="pub-hero-desc">
+                    Novel subgraph-level DP-GNN training using disjoint graph partitions and DP-SGD.
+                    Demonstrated model-reconstruction attack success rate reduced from &gt;85% to 25%.
+                </p>
+                <a href="https://ieeexplore.ieee.org/document/10825799" class="publication-link" target="_blank">View on IEEE Xplore →</a>
             </div>
         </section>
 
-        <!-- Tech Stack -->
-        <section class="tech-stack-section">
+        <!-- WORK EXPERIENCE — chronological oldest first -->
+        <section class="experience-section" id="experience">
+            <h2 class="section-title">Work Experience</h2>
+
+            <div class="experience-list">
+
+                <!-- 1. Infrastructure / Self-directed (most recent) -->
+                <article class="experience-card">
+                    <div class="experience-meta">
+                        <div class="experience-period">Apr 2024 – Present</div>
+                        <div class="experience-location">St. Catharines, ON</div>
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <h3 class="experience-title">Infrastructure &amp; Systems Engineering</h3>
+                            <span class="experience-company">Self-Directed</span>
+                        </div>
+                        <p class="experience-context">
+                            End-to-end infrastructure and deployment work across multiple concurrent ML and automation projects, 
+                            focused on cost-effective and reproducible production-grade systems.
+                        </p>
+                        <ul class="experience-bullets">
+                            <li>Built a <strong>custom minimal Blender Docker image from scratch</strong> — public images were broken and 3–4× oversized; custom image supports fully headless automated rendering and training with no manual steps</li>
+                            <li>Engineered browser-based ML inference using <strong>ONNX Runtime Web + WebGPU</strong> — traditional server-side inference scales linearly at ~$2.40 per 1,000 users; this architecture brings marginal cost to near-zero at any volume</li>
+                            <li>Deployed and managed <strong>Coolify</strong> on a shared GPU server to orchestrate Dockerized training containers across concurrent projects — handled scheduling, environment isolation, and reproducible deploys</li>
+                            <li>Designed and administered multi-user compute infrastructure using <strong>Docker, CI/CD pipelines, and Linux server environments</strong> supporting concurrent projects</li>
+                            <li>Built end-to-end deployment workflows from development through production with version control integrity and automated testing; currently extending toward distributed training and inference at scale</li>
+                        </ul>
+                        <div class="experience-tags">
+                            <span>Docker</span><span>Coolify</span><span>Custom Images</span><span>ONNX Runtime</span><span>WebGPU</span><span>CI/CD</span><span>Linux</span><span>NGINX</span><span>Cloudflare R2</span>
+                        </div>
+                    </div>
+                </article>
+
+                <div class="experience-divider"></div>
+
+                <!-- 2. Brock Research -->
+                <article class="experience-card">
+                    <div class="experience-meta">
+                        <div class="experience-period">Apr 2023 – Apr 2024</div>
+                        <div class="experience-location">St. Catharines, ON</div>
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <h3 class="experience-title">Research Assistant</h3>
+                            <span class="experience-company">Brock University</span>
+                        </div>
+                        <p class="experience-context">
+                            Hired after completing a 4-month independent research project that directly informed the lab's direction — 
+                            transitioned from course credit to a full research contract. Work culminated in a paper presented at 
+                            IEEE Big Data 2024 (Dec 2024).
+                        </p>
+                        <ul class="experience-bullets">
+                            <li>Published peer-reviewed research at <strong>IEEE International Conference on Big Data 2024</strong> — first-authored work on differentially private graph neural networks (DP-GNNs), outperforming existing privacy-utility benchmarks</li>
+                            <li>Re-architected compute-intensive ML experiments into distributed asynchronous systems, <strong>reducing execution time from 1.5 weeks to 1.5 days</strong> (90% improvement); introduced <strong>CUDA acceleration</strong> to reduce individual training and evaluation runs by a further ~85%</li>
+                            <li>Contributed documentation to the <strong>Opacus open-source library</strong> (Meta AI's DP-SGD framework) after deep research into its compatibility with graph-structured data</li>
+                            <li>Managed GPU workloads across local VMs and cloud environments under research deadlines; built reliable experiment pipelines with full version control</li>
+                            <li>Implemented custom model-reconstruction attacks, then mitigated attack success rate from <strong>&gt;85% to 25%</strong> using differential privacy</li>
+                        </ul>
+                        <div class="experience-tags">
+                            <span>PyTorch</span><span>CUDA</span><span>Opacus</span><span>DP-SGD</span><span>Graph Neural Networks</span><span>Distributed Training</span><span>Selenium</span><span>RAG</span>
+                        </div>
+                    </div>
+                </article>
+
+                <div class="experience-divider"></div>
+
+                <!-- 3. Web Dev / Convention -->
+                <article class="experience-card">
+                    <div class="experience-meta">
+                        <div class="experience-period">Sept 2018 – Jul 2019</div>
+                        <div class="experience-location">Niagara Falls, ON</div>
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <h3 class="experience-title">Independent Web Developer</h3>
+                            <span class="experience-company">Convention Event Project</span>
+                        </div>
+                        <p class="experience-context">
+                            Sole developer and technical lead for a first-time convention's entire digital infrastructure — 
+                            from zero to launch in roughly two months, with ongoing support for a year.
+                        </p>
+                        <ul class="experience-bullets">
+                            <li>Built and deployed the full event website end-to-end: domain, hosting, design, graphics — the organization's first-ever web presence</li>
+                            <li>Integrated a ticketing and vendor management system that <strong>generated over $30,000 in revenue</strong></li>
+                            <li>Provided ongoing technical support and maintenance for approximately one year post-launch through the convention date</li>
+                        </ul>
+                        <div class="experience-tags">
+                            <span>Web Development</span><span>DNS &amp; Hosting</span><span>Ticketing Systems</span><span>Graphic Design</span>
+                        </div>
+                    </div>
+                </article>
+
+                <div class="experience-divider"></div>
+
+                <!-- 4. MTO Co-op (oldest) -->
+                <article class="experience-card">
+                    <div class="experience-meta">
+                        <div class="experience-period">Jan – Apr 2018</div>
+                        <div class="experience-location">St. Catharines, ON</div>
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <h3 class="experience-title">Technical Analyst <span class="coop-badge">Co-op</span></h3>
+                            <span class="experience-company">Ministry of Transportation &amp; Labour, Ontario</span>
+                        </div>
+                        <p class="experience-context">
+                            Embedded with IT and business teams during an enterprise Microsoft Dynamics CRM deployment, 
+                            supporting the full development → UAT → production rollout cycle.
+                        </p>
+                        <ul class="experience-bullets">
+                            <li>Supported end-to-end <strong>Microsoft Dynamics CRM deployment</strong> across dev, UAT, and production — collaborated with IT teams and business stakeholders on requirements and validation</li>
+                            <li>Validated and reconciled <strong>10,000+ records</strong> between CRM and SharePoint; documented discrepancies and produced corrective procedures used by the wider team</li>
+                            <li>Pulled and restructured financial data for <strong>senior management meetings</strong>, tracking millions in project spend and work allocation across ministries</li>
+                            <li>Administered user accounts, permissions, and role-based access controls across CRM and SharePoint; configured UI using <strong>Ribbon Workbench</strong></li>
+                        </ul>
+                        <div class="experience-tags">
+                            <span>Microsoft Dynamics CRM</span><span>SharePoint</span><span>Ribbon Workbench</span><span>Data Validation</span><span>SQL</span><span>Role-Based Access</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="projects-section" id="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Object Rotation Prediction &amp; Reinforcement Learning for 3D Orientation Control</h3>
+                        <p class="project-tech">Python &bull; Reinforcement Learning &bull; WebGPU &bull; ONNX &bull; Synthetic Data</p>
+                        <p class="project-description">
+                            End-to-end ML system for predicting 3D object rotation and autonomous re-orientation — built around eliminating cloud inference costs through client-side execution.
+                        </p>
+                        <ul class="project-description">
+                            <li>Migrated PyTorch models to client-side <strong>ONNX Runtime Web with WebGPU acceleration</strong> — server-side inference costs ~$2.40 per 1,000 users and scales linearly; this approach brings marginal cost to near-zero regardless of volume</li>
+                            <li>Built synthetic data generation pipeline producing unlimited labeled training data, achieving <strong>&gt;95% rotation prediction accuracy</strong></li>
+                            <li>Trained RL agent for real-time 3D object re-orientation with <strong>sub-100ms inference latency</strong></li>
+                            <li>Containerized full training pipeline with Docker for scalable remote GPU deployment over SSH</li>
+                        </ul>
+                        <div class="tech-highlights">
+                            <span class="tech-tag">ONNX Runtime Web</span>
+                            <span class="tech-tag">WebGPU</span>
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Cloudflare R2</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/sagerkudrick/main-prediction-RL" class="project-link" target="_blank">View Repository</a>
+                        </div>
+                    </div>
+                    <div class="project-images">
+                        <div class="project-image pipeline-tall"><span><img src="images/rot_pipeline.gif" alt="Rotation prediction ML pipeline diagram"></span></div>
+                    </div>
+                </article>
+
+                <div class="project-separator"></div>
+
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Counter-Strike 2 Synthetic Dataset Pipeline + Object Detection</h3>
+                        <p class="project-tech">Python &bull; Blender &bull; Computer Vision &bull; YOLOv8 &bull; Docker</p>
+                        <p class="project-description">
+                            Automated Blender pipeline for generating synthetic labeled datasets and training real-time object detection models — zero manual annotation.
+                        </p>
+                        <ul class="project-description">
+                            <li>Built a <strong>custom minimal Blender Docker image</strong> from scratch — public images were broken and 3–4× oversized; supports fully headless automated rendering</li>
+                            <li>Automated Blender Python API workflow generating <strong>2,000+ synthetic images</strong> with varied poses, angles, and lighting — no manual labeling</li>
+                            <li>Trained YOLOv8 detection models achieving <strong>&gt;85% real-time accuracy</strong> in live game scenarios</li>
+                        </ul>
+                        <div class="tech-highlights">
+                            <span class="tech-tag">Custom Docker Image</span>
+                            <span class="tech-tag">Blender API</span>
+                            <span class="tech-tag">YOLOv8</span>
+                            <span class="tech-tag">Synthetic Data</span>
+                            <span class="tech-tag">Python Automation</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/sagerkudrick/cs2-dataset-gen" class="project-link" target="_blank">View Repository</a>
+                        </div>
+                    </div>
+                    <div class="project-images side-by-side">
+                        <div class="project-image"><span><img src="images/cs2_ingame.gif" alt="CS2 real-time object detection"></span></div>
+                        <div class="project-image"><span><img src="images/cs2_gen.gif" alt="Synthetic dataset generation pipeline"></span></div>
+                    </div>
+                </article>
+
+                <div class="project-separator"></div>
+
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Privacy-Preserving Image &amp; Text Classification</h3>
+                        <p class="project-tech">Python &bull; Differential Privacy &bull; Opacus &bull; PyTorch</p>
+                        <p class="project-description">
+                            Neural network training with formal Differential Privacy guarantees — preventing dataset reconstruction and membership inference attacks with mathematically provable bounds.
+                        </p>
+                        <ul class="project-description">
+                            <li>Implemented DP-SGD with gradient clipping and calibrated noise injection, achieving <strong>ε=5.0 privacy guarantee</strong> while maintaining &gt;95% accuracy on MNIST</li>
+                            <li>Baseline accuracy &gt;98% vs. DP-trained &gt;95% — minimal trade-off with formal guarantees against model inversion attacks</li>
+                            <li>Directly informed the privacy accounting and training methodology used in the published IEEE Big Data paper</li>
+                        </ul>
+                        <div class="tech-highlights">
+                            <span class="tech-tag">Opacus (DP-SGD)</span>
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">Privacy Accounting</span>
+                            <span class="tech-tag">Attack Mitigation</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/SagerKudrick/ml-dp" class="project-link" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-images single-image">
+                        <div class="project-image"><span><img src="images/mnist_predictions.gif" alt="MNIST differential privacy predictions"></span></div>
+                    </div>
+                </article>
+
+                <div class="project-separator"></div>
+
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">3D Magazine Rendering Pipeline</h3>
+                        <p class="project-tech">Python &bull; Blender &bull; Docker (Headless) &bull; Automation</p>
+                        <p class="project-description">
+                            Automated pipeline converting vintage gaming magazines into animated 3D renders — fully headless, runs end-to-end from raw PDF to platform-optimized video without manual steps.
+                        </p>
+                        <ul class="project-description">
+                            <li>Scraped and processed PDFs into high-resolution textures for 3D mesh mapping</li>
+                            <li>Scripted Blender Python API to automate texture application, lighting, and camera animation</li>
+                            <li>Runs in a <strong>custom headless Docker container</strong> — fully automated, no manual steps after initial setup</li>
+                            <li>Generates platform-optimized exports for Instagram, Twitter, and TikTok</li>
+                        </ul>
+                        <div class="tech-highlights">
+                            <span class="tech-tag">Blender Python API</span>
+                            <span class="tech-tag">Docker (Headless)</span>
+                            <span class="tech-tag">PDF Processing</span>
+                            <span class="tech-tag">Texture Mapping</span>
+                        </div>
+                        <div class="project-links">
+                            <p class="project-link-note">Core assets private to preserve originality</p>
+                        </div>
+                    </div>
+                    <div class="project-images">
+                        <div class="project-image pipeline-tall"><span><img src="images/blender_render.gif" alt="3D magazine Blender render"></span></div>
+                    </div>
+                </article>
+
+                <div class="project-separator"></div>
+
+                <!-- CS 1v1 Gamemode -->
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Counter-Strike 1v1 Gamemode — Full Stack Server &amp; Web Platform</h3>
+                        <p class="project-tech">C# &bull; MySQL &bull; PHP &bull; SSH &bull; Linux &bull; VMs</p>
+                        <p class="project-description">
+                            Custom Counter-Strike gamemode with a full backend — live server, database, and web frontend built and managed entirely from scratch.
+                        </p>
+                        <ul class="project-description">
+                            <li>Developed the gamemode plugin in SourcePawn (.sp) using SourceMod, implementing 1v1 match logic, item stake handling, round flow and win validation.</li>
+                            <li>Set up and administered the <strong>Linux game server via SSH and FileZilla</strong> — handled deployment, file management, and live updates</li>
+                            <li>Designed and maintained a <strong>MySQL database</strong> tracking player stats, match history, and rankings with a PHP web frontend</li>
+                            <li>Used <strong>virtual machines to run multiple game clients simultaneously</strong> for testing match flows, edge cases, and database integrity across accounts</li>
+                        </ul>
+                        <div class="tech-highlights">
+                            <span class="tech-tag">C# / SourceMod</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">Linux / SSH</span>
+                            <span class="tech-tag">VirtualBox</span>
+                        </div>
+                    </div>
+                    <div class="project-images">
+                        <div class="project-images single-image">
+                            <div class="project-image pipeline-tall"><span><img src="images/exchange.png" alt="Counter-Strike 1v1 Gamemode"></span></div>
+                        </div>
+                    </div>
+                </article>
+
+                <div class="project-separator"></div>
+
+                <!-- Selenium Scraper + RAG -->
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Canada Games Web Scraper &amp; RAG Question-Answering System</h3>
+                        <p class="project-tech">Python &bull; Selenium &bull; MySQL &bull; RAG &bull; LLM</p>
+                        <p class="project-description">
+                            End-to-end pipeline from web scraping to a retrieval-augmented generation system — scraped a large structured dataset, stored it, then built a QA interface on top.
+                        </p>
+                        <ul class="project-description">
+                            <li>Built a <strong>Selenium scraper</strong> to collect Canada Games athlete and event data across <strong>10,000+ records and fields</strong> from a live web source</li>
+                            <li>Cleaned and loaded the dataset into a structured database with normalized schemas</li>
+                            <li>Developed a <strong>RAG-based question-answering system</strong> trained on the scraped data — enabling natural language queries over the full dataset</li>
+                        </ul>
+                        <div class="tech-highlights">
+                            <span class="tech-tag">Selenium</span>
+                            <span class="tech-tag">Web Scraping</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">RAG</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                    </div>
+                    <div class="project-images">
+                    <div class="project-images single-image">
+                        <div class="project-image"><span><img src="images/canada_games.png" alt="Canada Games Web Scraper & RAG"></span></div>
+                    </div>
+                    </div>
+                </article>
+
+                <div class="project-separator"></div>
+
+                <!-- WoW Chart Race -->
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">World of Warcraft Server Stats — API Scraper &amp; Chart Race Visualization</h3>
+                        <p class="project-tech">Python &bull; Postman &bull; REST API &bull; Excel &bull; Data Visualization</p>
+                        <p class="project-description">
+                            Scraped WoW private server population stats across all servers on weekly resets, cleaned the data, and produced an animated chart race video showing server growth over time.
+                        </p>
+                        <ul class="project-description">
+                            <li>Used <strong>Postman scripts and Python</strong> to automate GET requests against the Ironforge.pro API, collecting population data for all servers across weekly reset cycles</li>
+                            <li>Exported, cleaned, and structured the full dataset in <strong>Excel</strong> with custom transformations to make it chart-ready</li>
+                            <li>Generated an <strong>animated bar chart race video</strong> showing the rise and fall of server populations over time — a clean data storytelling format</li>
+                        </ul>
+                        <div class="tech-highlights">
+                            <span class="tech-tag">REST API</span>
+                            <span class="tech-tag">Postman</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Excel</span>
+                            <span class="tech-tag">Data Visualization</span>
+                        </div>
+                    </div>
+                    <div class="project-images">
+                        <div class="project-image project-image-placeholder">
+                            <video 
+                                src="images/chart_race.mp4"
+                                width="500"
+                                height="300"
+                                autoplay
+                                loop
+                                muted
+                                playsinline>
+                            </video>
+                        </div>
+                    </div>
+                </article>
+
+                <div class="project-separator"></div>
+
+                <!-- Video Color Palette -->
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Real-Time Video Color Palette Extractor</h3>
+                        <p class="project-tech">Python &bull; OpenCV &bull; Color Analysis &bull; Real-Time Processing</p>
+                        <p class="project-description">
+                            Tool that samples the dominant colors from each video frame in real time and renders a live color palette strip at the bottom of the playback — so you can see the full color story of a video as it plays.
+                        </p>
+                        <ul class="project-description">
+                            <li>Samples frames continuously during playback, extracts dominant colors using clustering, and sorts them for visual coherence</li>
+                            <li>Renders the palette as an animated strip synchronized to the video — updated every frame with no perceptible lag</li>
+                            <li>Works on any video file; useful for cinematography analysis, color grading reference, and visual design work</li>
+                        </ul>
+                        <div class="tech-highlights">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">Color Clustering</span>
+                            <span class="tech-tag">Real-Time Processing</span>
+                        </div>
+
+                    </div>
+                    <div class="project-images">
+                        <div class="project-image pipeline-tall">
+                            <video 
+                                src="images/preview.mp4"
+                                width="650"
+                                height="450"
+                                autoplay
+                                loop
+                                muted
+                                playsinline>
+                            </video>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+        <section class="publications-section" id="publications">
+            <h2 class="section-title">Research &amp; Publications</h2>
+            <div class="publications-list">
+
+                <article class="publication-card">
+                    <div class="publication-status">Published — IEEE Big Data 2024</div>
+                    <h3 class="publication-title">Leveraging Graph Clustering for Differentially Private Graph Neural Networks</h3>
+                    <p class="publication-authors">Sager Kudrick, Renata Dividino</p>
+                    <p class="publication-venue">IEEE International Conference on Big Data, Washington D.C., December 2024</p>
+                    <p class="publication-description">
+                        Proposed a method for training subgraph-level DP-GNNs using disjoint subgraphs and DP-SGD, 
+                        preserving node and neighborhood privacy while maintaining model utility. Inspired by community 
+                        detection for graph partitioning; outperforms existing privacy-preserving GNN techniques.
+                    </p>
+                    <div class="publication-links">
+                        <a href="https://ieeexplore.ieee.org/document/10825799" class="publication-link" target="_blank">IEEE Xplore</a>
+                    </div>
+                </article>
+
+                <article class="publication-card">
+                    <div class="publication-status unpublished-status">Submitted — CAI 2024</div>
+                    <h3 class="publication-title">Clustering Graphs for Privacy: Leveraging Graph Clustering for Differentially Private Message Passing GNNs</h3>
+                    <p class="publication-authors">Sager Kudrick, Renata Dividino</p>
+                    <p class="publication-venue">Submitted to CAI 2024</p>
+                    <p class="publication-description">
+                        Research exploring graph clustering approaches for training differentially private message-passing GNNs —
+                        developed novel methods for preserving node and neighborhood privacy in graph-structured data.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- TECH STACK -->
+        <section class="tech-stack-section" id="stack">
             <h2 class="section-title">Tech Stack</h2>
             <div class="tech-stack-grid">
-                
+
                 <div class="tech-stack-category">
                     <h4>Languages</h4>
                     <div class="tech-stack-tags">
-                        <span>Python</span>
-                        <span>C#</span>
-                        <span>JavaScript</span>
-                        <span>SQL</span>
-                        <span>HTML/CSS</span>
-                        <span>PHP</span>
+                        <span>Python</span><span>C#</span><span>Java</span><span>JavaScript</span><span>SQL</span><span>HTML/CSS</span><span>PHP</span><span>PowerShell</span>
                     </div>
                 </div>
 
                 <div class="tech-stack-category">
-                    <h4>ML & AI Frameworks</h4>
+                    <h4>DevOps &amp; Infrastructure</h4>
                     <div class="tech-stack-tags">
-                        <span>PyTorch</span>
-                        <span>TensorFlow</span>
-                        <span>Scikit-learn</span>
-                        <span>ONNX Runtime</span>
-                        <span>Opacus (DP-SGD)</span>
+                        <span>Docker</span><span>Custom Images</span><span>Coolify</span><span>CI/CD</span><span>Linux</span><span>NGINX</span><span>SSH</span><span>FileZilla</span><span>AWS</span><span>Azure</span><span>Cloudflare R2</span><span>VirtualBox</span>
                     </div>
                 </div>
 
                 <div class="tech-stack-category">
-                    <h4>Computer Vision</h4>
+                    <h4>ML &amp; AI</h4>
                     <div class="tech-stack-tags">
-                        <span>YOLOv8</span>
-                        <span>OpenCV</span>
-                        <span>Blender API</span>
+                        <span>PyTorch</span><span>CUDA</span><span>TensorFlow</span><span>Scikit-learn</span><span>ONNX Runtime</span><span>Opacus (DP-SGD)</span><span>YOLOv8</span><span>WebGPU</span><span>RAG</span><span>OCR</span>
                     </div>
                 </div>
 
                 <div class="tech-stack-category">
-                    <h4>Infrastructure & Cloud</h4>
+                    <h4>Security &amp; Networking</h4>
                     <div class="tech-stack-tags">
-                        <span>Docker</span>
-                        <span>AWS</span>
-                        <span>Azure</span>
-                        <span>Cloudflare R2</span>
-                        <span>SSH/Remote GPU</span>
+                        <span>Kali Linux</span><span>Wireshark</span><span>Packet Sniffing</span><span>XSS Prevention</span><span>SQL Injection</span><span>Firewall Config</span><span>Secure Coding</span><span>Burp Suite (learning)</span>
                     </div>
                 </div>
 
                 <div class="tech-stack-category">
-                    <h4>Data & Backend</h4>
+                    <h4>Data &amp; Scraping</h4>
                     <div class="tech-stack-tags">
-                        <span>MySQL</span>
-                        <span>PostgreSQL</span>
-                        <span>API Design</span>
-                        <span>Data Pipelines</span>
+                        <span>Selenium</span><span>Web Scraping</span><span>Postman</span><span>REST APIs</span><span>MySQL</span><span>PostgreSQL</span><span>Excel / Data Cleaning</span><span>Data Pipelines</span>
                     </div>
                 </div>
 
                 <div class="tech-stack-category">
-                    <h4>Performance & Deployment</h4>
+                    <h4>Enterprise &amp; Other</h4>
                     <div class="tech-stack-tags">
-                        <span>WebGPU</span>
-                        <span>Distributed Training</span>
-                        <span>Model Optimization</span>
-                        <span>CI/CD</span>
+                        <span>Microsoft Dynamics CRM</span><span>SharePoint</span><span>Active Directory</span><span>Entra ID</span><span>OpenCV</span><span>Blender API</span><span>C# .NET MVC</span>
                     </div>
                 </div>
 
             </div>
         </section>
 
-    <!-- Projects Section -->
-    <section class="projects-section">
-        <h2 class="section-title">Projects</h2>
-        <div class="projects-grid">
-            
-            <!-- Project 1 -->
-            <article class="project-card">
-                <div class="project-content">
-                    <h3 class="project-title">Object Rotation Prediction & Reinforced Learning for 3D Orientation Control</h3>
-                    <p class="project-tech">Python • Reinforcement Learning • WebGPU • Synthetic Data</p>
-                    <p class="project-description">
-                        Built an end-to-end ML system for predicting 3D object rotation and autonomous re-orientation using reinforcement learning.
-                    </p>
-                    <ul class="project-description">
-                        <li>Migrated PyTorch models to client-side ONNX Runtime Web with WebGPU acceleration, reducing AWS egress costs from ~$2.4k/month to near-zero for 1,000 users</li>
-                        <li>Engineered synthetic data generation pipeline producing infinite labeled training datasets, achieving >95% rotation prediction accuracy</li>
-                        <li>Trained reinforcement learning agent for real-time 3D object re-orientation with sub-100ms inference latency</li>
-                        <li>Containerized training pipeline with Docker for scalable remote GPU deployment via SSH</li>
-                    </ul>
-                    <div class="tech-highlights">
-                        <span class="tech-tag">ONNX Runtime Web</span>
-                        <span class="tech-tag">WebGPU</span>
-                        <span class="tech-tag">PyTorch</span>
-                        <span class="tech-tag">Docker + SSH</span>
-                        <span class="tech-tag">Cloudflare R2</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/sagerkudrick/main-prediction-RL" class="project-link">View Repository</a>
-                    </div>
+        <!-- EDUCATION -->
+        <section class="education-section" id="education">
+            <h2 class="section-title">Education</h2>
+            <div class="education-list">
+                <div class="education-item">
+                    <div class="education-degree">B.Sc. (Hons) Computer Science — Software Engineering Concentration</div>
+                    <div class="education-school">Brock University &mdash; St. Catharines, ON</div>
+                    <div class="education-period">2019 – 2023</div>
                 </div>
-                <div class="project-images">
-                    <div class="project-image pipeline-tall"><span><img src="images/rot_pipeline.gif" alt="ML Pipeline Diagram"></span></div>
+                <div class="education-item">
+                    <div class="education-degree">Computer Programming Analyst Diploma</div>
+                    <div class="education-school">Niagara College &mdash; Welland, ON</div>
+                    <div class="education-period">2015 – 2019</div>
                 </div>
-            </article>
+            </div>
+        </section>
 
-            <div class="project-separator"></div>
-
-            <!-- Project 2 -->
-            <article class="project-card">
-                <div class="project-content">
-                    <h3 class="project-title">Counter-Strike 2 Dataset Rendering Pipeline + Object Detection</h3>
-                    <p class="project-tech">Python • Blender • Computer Vision • Object Detection</p>
-                    <p class="project-description">
-                        Blender + Python pipeline for generating synthetic 3D game character datasets and real-time object detection.
-                    </p>
-                    <ul class="project-description">
-                        <li>Automated Blender Python API workflow generating 2,000+ synthetic character images with varied poses, angles, and lighting conditions</li>
-                        <li>Trained YOLOv8 detection models achieving >85% real-time accuracy in live game scenarios</li>
-                        <li>Eliminated manual dataset creation, enabling infinite training data generation for iterative model improvements</li>
-                    </ul>
-                    <div class="tech-highlights">
-                        <span class="tech-tag">Blender API</span>
-                        <span class="tech-tag">YOLOv8</span>
-                        <span class="tech-tag">Synthetic Data</span>
-                        <span class="tech-tag">Python Automation</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/sagerkudrick/cs2-dataset-gen" class="project-link">View Repository</a>
-                    </div>
-                </div>
-                <div class="project-images side-by-side">
-                    <div class="project-image"><span><img src="images/cs2_ingame.gif" alt="CS2 Detection"></span></div>
-                    <div class="project-image"><span><img src="images/cs2_gen.gif" alt="Dataset Generation"></span></div>
-                </div>
-            </article>
-
-            <div class="project-separator"></div>
-
-            <!-- Project 3 -->
-            <article class="project-card">
-                <div class="project-content">
-                    <h3 class="project-title">3D Magazine Pipeline</h3>
-                    <p class="project-tech">Python • Blender • 3D Rendering • Automation</p>
-                    <p class="project-description">
-                        Automated Blender pipeline for converting vintage gaming magazines into animated 3D models for social media.
-                    </p>
-                    <ul class="project-description">
-                        <li>Scraped and processed PDF magazines, extracting pages as high-resolution textures for 3D mesh mapping</li>
-                        <li>Scripted Blender Python API to automate texture application, lighting, and camera animation sequences</li>
-                        <li>Generated platform-optimized GIF and video exports tailored for Instagram, Twitter, and TikTok formats</li>
-                    </ul>
-                    <div class="tech-highlights">
-                        <span class="tech-tag">Blender Python API</span>
-                        <span class="tech-tag">PDF Processing</span>
-                        <span class="tech-tag">Texture Mapping</span>
-                        <span class="tech-tag">Animation Export</span>
-                    </div>
-                    <div class="project-links">
-                        <p class="project-link">Core assets private to preserve orignality</p>
-                    </div>
-                </div>
-                <div class="project-images">
-                    <div class="project-image pipeline-tall"><span><img src="images/blender_render.gif" alt="3D Magazine Render"></span></div>
-                </div>
-            </article>
-
-            <div class="project-separator"></div>
-
-            <!-- Project 4 -->
-            <article class="project-card">
-                <div class="project-content">
-                    <h3 class="project-title">Privacy-Preserving Image and Text Classification</h3>
-                    <p class="project-tech">Python • Differential Privacy • Neural Networks • MNIST</p>
-                    <p class="project-description">
-                        Neural network training with Differential Privacy (DP) techniques to prevent dataset reconstruction and membership inference attacks.
-                    </p>
-                    <ul class="project-description">
-                        <li>Implemented DP-SGD with gradient clipping and noise injection, achieving ε=5.0 privacy guarantee while maintaining >95% accuracy on MNIST</li>
-                        <li>Mathematically provable protection against model inversion and reconstruction attacks on training data</li>
-                        <li>Demonstrated minimal accuracy trade-off: baseline >98% vs. DP-trained >95% with formal privacy guarantees</li>
-                    </ul>
-                    <div class="tech-highlights">
-                        <span class="tech-tag">Opacus (DP-SGD)</span>
-                        <span class="tech-tag">PyTorch</span>
-                        <span class="tech-tag">Privacy Accounting</span>
-                        <span class="tech-tag">Model Attack Mitigation</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/SagerKudrick/ml-dp" class="project-link">View Project</a>
-                    </div>
-                </div>
-                <div class="project-images single-image">
-                    <div class="project-image"><span><img src="images/mnist_predictions.gif" alt="MNIST Predictions"></span></div>
-                </div>
-            </article>
-
-        </div>
-    </section>
-
-    <!-- Publications Section -->
-    <section class="publications-section">
-        <h2 class="section-title">Research & Publications</h2>
-        <div class="publications-list">
-            
-            <!-- Published Paper -->
-            <article class="publication-card">
-                <div class="publication-status">Published</div>
-                <h3 class="publication-title">Leveraging Graph Clustering for Differentially Private Graph Neural Networks</h3>
-                <p class="publication-authors">Sager Kudrick, Renata Dividino</p>
-                <p class="publication-venue">IEEE International Conference on Big Data, 2024</p>
-                <p class="publication-description">
-                    Proposed a method for training subgraph-level DP-GNNs using disjoint subgraphs and DP-SGD. 
-                    Preserves node and neighborhood privacy while maintaining model utility, outperforming existing techniques. 
-                    Inspired by community detection for graph partitioning.
-                </p>
-                <div class="publication-links">
-                    <a href="https://ieeexplore.ieee.org/document/10825799" class="publication-link">IEEE Xplore</a>
-                </div>
-            </article>
-
-            <article class="publication-card">
-                <div class="publication-status">Unpublished</div>
-                <h3 class="publication-title">Clustering Graphs for Privacy: Leveraging Graph Clustering for Differentially Private Message Passing GNNs</h3>
-                <p class="publication-authors">Sager Kudrick, Renata Dividino</p>
-                <p class="publication-venue">Submitted to CAI 2024</p>
-                <p class="publication-description">
-                    Research exploring graph clustering approaches for training differentially private message-passing GNNs. 
-                    Developed methods for preserving node and neighborhood privacy in graph neural networks.
-                </p>
-            </article>
-        </div>  
-    </section>
     </div>
 
-
-    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
-                <h3 class="footer-title">Let's Build Something Together</h3>
-                <p class="footer-text">I'm always interested in hearing about new projects and opportunities.</p>
+                <h3 class="footer-title">Let's Work Together</h3>
+                <p class="footer-text">Open to full-time roles in DevOps, ML engineering, software development, or security. Based in St. Catharines, ON — open to remote.</p>
                 <div class="footer-links">
-                    <a href="mailto:sagerkudrick@gmail.com" class="contact-link">Get In Touch</a>
+                    <a href="/cdn-cgi/l/email-protection#91e2f0f6f4e3fae4f5e3f8f2fad1f6fcf0f8fdbff2fefc" class="contact-link">Get In Touch</a>
+                    <a href="/resume.pdf" class="contact-link" target="_blank">Download Resume</a>
                 </div>
             </div>
-            <p class="copyright">&copy; 2026 Sager Kudrick. Built with passion and code
+            <p class="copyright">&copy; 2026 Sager Kudrick
