@@ -150,12 +150,11 @@
                             <span class="experience-company">Self-Directed</span>
                         </div>
                         <p class="experience-context">
-                            End-to-end infrastructure and deployment work across multiple concurrent ML and automation projects, 
-                            focused on cost-effective and reproducible production-grade systems.
+                            PyTorch model that predicts an objections rotation in 3D space from a single image, with predicted rotations fed to a real-time Reinforcement Learning agent to re-orientate the object upright.
                         </p>
                         <ul class="experience-bullets">
-                            <li>Built a <strong>custom minimal Blender Docker image from scratch</strong> — public images were broken and 3–4× oversized; custom image supports fully headless automated rendering and training with no manual steps</li>
-                            <li>Engineered browser-based ML inference using <strong>ONNX Runtime Web + WebGPU</strong> — traditional server-side inference scales linearly at ~$2.40 per 1,000 users; this architecture brings marginal cost to near-zero at any volume</li>
+                            <li>Built a <strong>custom minimal Blender Docker image from scratch</strong> — public images were broken, bloated, and 3–4× oversized; custom image supports fully headless automated rendering and training with no manual steps</li>
+                            <li>Engineered browser-based ML inference using <strong>ONNX Runtime Web + WebGPU</strong> to avoid traditional server-side inference, that scales linearly at ~$2.40 per 1,000 users per hour (<strong>~$2,400/month reduced to near-zero</strong>)</li>
                             <li>Deployed and managed <strong>Coolify</strong> on a shared GPU server to orchestrate Dockerized training containers across concurrent projects — handled scheduling, environment isolation, and reproducible deploys</li>
                             <li>Designed and administered multi-user compute infrastructure using <strong>Docker, CI/CD pipelines, and Linux server environments</strong> supporting concurrent projects</li>
                             <li>Built end-to-end deployment workflows from development through production with version control integrity and automated testing; currently extending toward distributed training and inference at scale</li>
@@ -267,7 +266,7 @@
                         <h3 class="project-title">Object Rotation Prediction &amp; Reinforcement Learning for 3D Orientation Control</h3>
                         <p class="project-tech">Python &bull; Reinforcement Learning &bull; WebGPU &bull; ONNX &bull; Synthetic Data</p>
                         <p class="project-description">
-                            End-to-end ML system for predicting 3D object rotation and autonomous re-orientation — built around eliminating cloud inference costs through client-side execution.
+                            PyTorch model that predicts an object's rotation in 3D space from a single image, with predicted rotations fed to a real-time Reinforcement Learning agent to re-orientate the object upright.
                         </p>
                         <ul class="project-description">
                             <li>Migrated PyTorch models to client-side <strong>ONNX Runtime Web with WebGPU acceleration</strong> — server-side inference costs ~$2.40 per 1,000 users and scales linearly; this approach brings marginal cost to near-zero regardless of volume</li>
@@ -309,8 +308,7 @@
                         <h3 class="project-title">World of Warcraft Server Stats — API Scraper &amp; Chart Race Visualization</h3>
                         <p class="project-tech">Python &bull; Postman &bull; REST API &bull; Excel &bull; Data Visualization</p>
                         <p class="project-description">
-                            Scraped WoW private server population stats across all servers on weekly resets, cleaned the data, and produced an animated chart race video showing server growth over time.
-                        </p>
+                            Scraped population stats from <strong>30+ servers totaling 600k+ users</strong> on weekly resets, cleaned and organized the data in Excel, and created an animated chart race video visualizing server growth over time. Video exceeded <strong>80k</strong> views.</p>
                         <ul class="project-description">
                             <li>Used <strong>Postman scripts and Python</strong> to automate GET requests against the Ironforge.pro API, collecting population data for all servers across weekly reset cycles</li>
                             <li>Exported, cleaned, and structured the full dataset in <strong>Excel</strong> with custom transformations to make it chart-ready</li>
@@ -389,7 +387,7 @@
                         <ul class="project-description">
                             <li>Built a <strong>custom minimal Blender Docker image</strong> from scratch — public images were broken, bloated, and 3–4× oversized; supports fully headless automated rendering</li>
                             <li>Automated Blender Python API workflow generating <strong>2,000+ synthetic images</strong> with varied poses, angles, and lighting — no manual labeling</li>
-                            <li>Trained YOLOv8 detection models achieving <strong>&gt;85% real-time accuracy</strong> in live game scenarios</li>
+                            <li>Trained YOLOv8 detection models achieving <strong>&gt;90% real-time accuracy</strong> in live game scenarios</li>
                         </ul>
                         <div class="tech-highlights">
                             <span class="tech-tag">Custom Docker Image</span>
@@ -484,6 +482,7 @@
                             <li>Designed and maintained a <strong>MySQL database</strong> tracking player stats, match history, and rankings with a PHP web frontend</li>
                             <li>Used <strong>virtual machines to run multiple game clients simultaneously</strong> for testing match flows, edge cases, and database integrity across accounts</li>
                             <li>Created <strong>stored procedures and triggers</strong> to automate common database operations and enforce data integrity and <strong>avoid SQL injections and common vulnerabilities</strong></li>
+                            <li><i>Project discontinued due to Steam Terms of Service changes restricting wagering mechanics</i></li>
                         </ul>
                         <div class="tech-highlights">
                             <span class="tech-tag">C# / SourceMod</span>
