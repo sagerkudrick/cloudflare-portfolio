@@ -49,9 +49,8 @@
         <div class="sitenav-inner">
             <a class="sitenav-brand" href="#hero">SK</a>
             <div class="sitenav-links">
-                <a class="sitenav-link" href="#experience">Experience</a>
+                <a class="sitenav-link" href="#experience">Experience &amp; Research</a>
                 <a class="sitenav-link" href="#projects">Projects</a>
-                <a class="sitenav-link" href="#publications">Research</a>
                 <a class="sitenav-link" href="#stack">Stack</a>
                 <a class="sitenav-link" href="#education">Education</a>
             </div>
@@ -82,7 +81,7 @@
                 </p>
 
                 <div class="contact-links">
-                    <a href="mailto:sagerkudrick@gmail.com" class="contact-link">
+                    <a href="/cdn-cgi/l/email-protection#85f6e4e2e0f7eef0e1f7ece6eec5e2e8e4ece9abe6eae8" class="contact-link">
                         <span>📧</span> Email
                     </a>
                     <a href="https://github.com/sagerkudrick" class="contact-link" target="_blank">
@@ -132,11 +131,13 @@
             </div>
         </section>
 
-        <!-- WORK EXPERIENCE — chronological oldest first -->
-        <section class="experience-section" id="experience">
-            <h2 class="section-title">Work Experience</h2>
+        <!-- EXPERIENCE + PUBLICATIONS -->
+        <section class="exp-pub-section" id="experience">
+            <div class="exp-pub-grid">
 
-            <div class="experience-list">
+                <div class="exp-col">
+                    <h2 class="section-title">Work Experience</h2>
+                    <div class="experience-list">
 
                 <!-- 1. Infrastructure / Self-directed (most recent) -->
                 <article class="experience-card">
@@ -253,8 +254,43 @@
                 </article>
 
             </div>
-        </section>
+                </div>
 
+                <div class="pub-col" id="publications">
+                    <h2 class="section-title">Research &amp; Publications</h2>
+                    <div class="publications-list">
+
+                <article class="publication-card">
+                    <div class="publication-status">Published — IEEE Big Data 2024</div>
+                    <h3 class="publication-title">Leveraging Graph Clustering for Differentially Private Graph Neural Networks</h3>
+                    <p class="publication-authors">Sager Kudrick, Renata Dividino</p>
+                    <p class="publication-venue">IEEE International Conference on Big Data, Washington D.C., December 2024</p>
+                    <p class="publication-description">
+                        Proposed a method for training subgraph-level DP-GNNs using disjoint subgraphs and DP-SGD, 
+                        preserving node and neighborhood privacy while maintaining model utility. Inspired by community 
+                        detection for graph partitioning; outperforms existing privacy-preserving GNN techniques.
+                    </p>
+                    <div class="publication-links">
+                        <a href="https://ieeexplore.ieee.org/document/10825799" class="publication-link" target="_blank">IEEE Xplore</a>
+                    </div>
+                </article>
+
+                <article class="publication-card">
+                    <div class="publication-status unpublished-status">Submitted — CAI 2024</div>
+                    <h3 class="publication-title">Clustering Graphs for Privacy: Leveraging Graph Clustering for Differentially Private Message Passing GNNs</h3>
+                    <p class="publication-authors">Sager Kudrick, Renata Dividino</p>
+                    <p class="publication-venue">Submitted to CAI 2024</p>
+                    <p class="publication-description">
+                        Research exploring graph clustering approaches for training differentially private message-passing GNNs —
+                        developed novel methods for preserving node and neighborhood privacy in graph-structured data.
+                    </p>
+                </article>
+
+            </div>
+                </div>
+
+            </div>
+        </section>
         <!-- PROJECTS -->
         <section class="projects-section" id="projects">
             <h2 class="section-title">Projects</h2>
@@ -503,38 +539,6 @@
 
             </div>
         </section>
-        <section class="publications-section" id="publications">
-            <h2 class="section-title">Research &amp; Publications</h2>
-            <div class="publications-list">
-
-                <article class="publication-card">
-                    <div class="publication-status">Published — IEEE Big Data 2024</div>
-                    <h3 class="publication-title">Leveraging Graph Clustering for Differentially Private Graph Neural Networks</h3>
-                    <p class="publication-authors">Sager Kudrick, Renata Dividino</p>
-                    <p class="publication-venue">IEEE International Conference on Big Data, Washington D.C., December 2024</p>
-                    <p class="publication-description">
-                        Proposed a method for training subgraph-level DP-GNNs using disjoint subgraphs and DP-SGD, 
-                        preserving node and neighborhood privacy while maintaining model utility. Inspired by community 
-                        detection for graph partitioning; outperforms existing privacy-preserving GNN techniques.
-                    </p>
-                    <div class="publication-links">
-                        <a href="https://ieeexplore.ieee.org/document/10825799" class="publication-link" target="_blank">IEEE Xplore</a>
-                    </div>
-                </article>
-
-                <article class="publication-card">
-                    <div class="publication-status unpublished-status">Submitted — CAI 2024</div>
-                    <h3 class="publication-title">Clustering Graphs for Privacy: Leveraging Graph Clustering for Differentially Private Message Passing GNNs</h3>
-                    <p class="publication-authors">Sager Kudrick, Renata Dividino</p>
-                    <p class="publication-venue">Submitted to CAI 2024</p>
-                    <p class="publication-description">
-                        Research exploring graph clustering approaches for training differentially private message-passing GNNs —
-                        developed novel methods for preserving node and neighborhood privacy in graph-structured data.
-                    </p>
-                </article>
-
-            </div>
-        </section>
 
         <!-- TECH STACK -->
         <section class="tech-stack-section" id="stack">
@@ -609,8 +613,6 @@
                 <h3 class="footer-title">Let's Work Together</h3>
                 <p class="footer-text">Open to full-time roles in DevOps, ML engineering, software development, or security. Based in St. Catharines, ON — open to remote.</p>
                 <div class="footer-links">
-                    <a href="mailto:sagerkudrick@gmail.com" class="contact-link">Get In Touch</a>
+                    <a href="/cdn-cgi/l/email-protection#136072747661786677617a707853747e727a7f3d707c7e" class="contact-link">Get In Touch</a>
                     <!-- <a href="/resume.pdf" class="contact-link" target="_blank">Download Resume</a> -->
-                </div>
-            </div>
-            <p class="copyright">&copy; 2026 Sager Kudrick
+          

@@ -52,9 +52,9 @@ body::before {
 .container {
     position: relative;
     z-index: 1;
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 3rem;
 }
 
 /* Hero Section */
@@ -664,7 +664,7 @@ ul {
 
 /* Publications Section */
 .publications-section {
-    padding: 4rem 0;
+    /* padding handled by .exp-pub-section */
 }
 
 .publications-list {
@@ -1015,7 +1015,7 @@ body {
 
 /* ─── Work Experience ─── */
 .experience-section {
-    padding: 4rem 0;
+    /* padding handled by .exp-pub-section */
 }
 
 .experience-list {
@@ -1469,5 +1469,60 @@ footer {
     .footer-links {
         flex-direction: column;
         align-items: center;
+    }
+}
+/* ─── Experience + Publications side-by-side ─── */
+.exp-pub-section {
+    padding: 4rem 0;
+}
+
+.exp-pub-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 0 4rem;
+    align-items: start;
+}
+
+/* Compress the meta sidebar inside the constrained column */
+.exp-col .experience-card {
+    grid-template-columns: 120px 1fr;
+    gap: 0 1.5rem;
+}
+
+/* Left divider between the two cols */
+.pub-col {
+    border-left: 1px solid var(--border);
+    padding-left: 3rem;
+    position: sticky;
+    top: 4.5rem;
+}
+
+.exp-col .section-title,
+.pub-col .section-title {
+    margin-bottom: 2rem;
+}
+
+.pub-col .publications-list {
+    gap: 2rem;
+}
+
+/* Responsive: stack on smaller screens */
+@media (max-width: 960px) {
+    .exp-pub-grid {
+        grid-template-columns: 1fr;
+        gap: 4rem 0;
+    }
+
+    .pub-col {
+        border-left: none;
+        border-top: 1px solid var(--border);
+        padding-left: 0;
+        padding-top: 3rem;
+        position: static;
+    }
+
+    .exp-col .experience-card {
+        grid-template-columns: 160px 1fr;
+        gap: 0 2.5rem;
     }
 }
