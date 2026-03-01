@@ -1493,8 +1493,6 @@ footer {
 .pub-col {
     border-left: 1px solid var(--border);
     padding-left: 3rem;
-    position: sticky;
-    top: 4.5rem;
 }
 
 .exp-col .section-title,

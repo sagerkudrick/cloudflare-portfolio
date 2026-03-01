@@ -69,19 +69,12 @@
                     Open to Full-Time Opportunities
                 </div>
 
-                <div class="greeting">Software Developer</div>
                 <h1>Sager Kudrick</h1>
+                <small>B.Sc. Computer Science, Concentration in Software Engineering</small>
                 <p class="tagline">ML Research &bull; DevOps &amp; Cloud &bull; Application Security</p>
 
-                <p class="about-text">
-                    B.Sc. Computer Science (Software Engineering), Brock University. I build and ship across a few domains — 
-                    ML systems with published research at IEEE Big Data 2024, Docker/CI/CD infrastructure, cloud deployments, 
-                    and application security. I'm drawn to problems with a clear engineering payoff: cutting cloud costs, 
-                    making training pipelines faster, or making systems harder to exploit.
-                </p>
-
                 <div class="contact-links">
-                    <a href="/cdn-cgi/l/email-protection#85f6e4e2e0f7eef0e1f7ece6eec5e2e8e4ece9abe6eae8" class="contact-link">
+                    <a href="mailto:sagerkudrick@gmail.com" class="contact-link">
                         <span>📧</span> Email
                     </a>
                     <a href="https://github.com/sagerkudrick" class="contact-link" target="_blank">
@@ -95,8 +88,7 @@
                     </p>
                 </div>
             </div>
-
-            <!-- Interest Cards -->
+<!-- 
             <div class="looking-for-grid">
                 <div class="lf-card">
                     <div class="lf-icon">⚙️</div>
@@ -115,21 +107,19 @@
                 </div>
             </div>
 
-            <!-- IEEE Publication Callout -->
             <div class="pub-hero-callout">
                 <div class="pub-hero-label">
                     <span class="pub-icon">📄</span>
-                    Peer-Reviewed Publication
+                    IEE Publication
                 </div>
                 <h3>Leveraging Graph Clustering for Differentially Private Graph Neural Networks</h3>
                 <p>Sager Kudrick, Renata Dividino &mdash; <strong>IEEE International Conference on Big Data, 2024</strong></p>
                 <p class="pub-hero-desc">
-                    Novel subgraph-level DP-GNN training using disjoint graph partitions and DP-SGD.
-                    Demonstrated model-reconstruction attack success rate reduced from &gt;85% to 25%.
+                    Novel subgraph-level DP-GNN training using disjoint graph partitions and DP-SGD. Model reconstruction attacks have success rates upwards of 90% against traditional GNNs.
                 </p>
                 <a href="https://ieeexplore.ieee.org/document/10825799" class="publication-link" target="_blank">View on IEEE Xplore →</a>
             </div>
-        </section>
+        </section> -->
 
         <!-- EXPERIENCE + PUBLICATIONS -->
         <section class="exp-pub-section" id="experience">
@@ -148,20 +138,13 @@
                     <div class="experience-content">
                         <div class="experience-header">
                             <h3 class="experience-title">Infrastructure &amp; Systems Engineering</h3>
-                            <span class="experience-company">Self-Directed</span>
+                            <span class="experience-company">Independent</span>
                         </div>
-                        <p class="experience-context">
-                            End-to-end infrastructure and deployment work across multiple concurrent ML and automation projects, focused on cost-effective and reproducible production-grade systems.                        </p>
                         <ul class="experience-bullets">
-                            <li>Built a <strong>custom minimal Blender Docker image from scratch</strong> — public images were broken, bloated, and 3–4× oversized; custom image supports fully headless automated rendering and training with no manual steps</li>
-                            <li>Engineered browser-based ML inference using <strong>ONNX Runtime Web + WebGPU</strong> to avoid traditional server-side inference, that scales linearly at ~$2.40 per 1,000 users per hour (<strong>~$2,400/month reduced to near-zero</strong>)</li>
-                            <li>Deployed and managed <strong>Coolify</strong> on a shared GPU server to orchestrate Dockerized training containers across concurrent projects — handled scheduling, environment isolation, and reproducible deploys</li>
-                            <li>Designed and administered multi-user compute infrastructure using <strong>Docker, CI/CD pipelines, and Linux server environments</strong> supporting concurrent projects</li>
-                            <li>Built end-to-end deployment workflows from development through production with version control integrity and automated testing; currently extending toward distributed training and inference at scale</li>
+                            <li>Migrated server-side inference <strong>(~$2.40/1,000 users per hour; ~$2,600/month) to near zero</strong> through browser-based inference using ONNX Runtime Web + WebGPU</li>                            
+                            <li>Managed shared GPU servers for training/inference, multi-user compute infrastucture, Docker, CI/CD, Linux server environments, built custom Blender Docker image</li>
                         </ul>
-                        <div class="experience-tags">
-                            <span>Docker</span><span>Coolify</span><span>Custom Images</span><span>ONNX Runtime</span><span>WebGPU</span><span>CI/CD</span><span>Linux</span><span>NGINX</span><span>Cloudflare R2</span>
-                        </div>
+
                     </div>
                 </article>
 
@@ -178,21 +161,13 @@
                             <h3 class="experience-title">Research Assistant</h3>
                             <span class="experience-company">Brock University</span>
                         </div>
-                        <p class="experience-context">
-                            Hired after completing a 4-month independent research project that directly informed the lab's direction — 
-                            transitioned from course credit to a full research contract. Work culminated in a paper presented at 
-                            IEEE Big Data 2024 (Dec 2024).
-                        </p>
                         <ul class="experience-bullets">
-                            <li>Published peer-reviewed research at <strong>IEEE International Conference on Big Data 2024</strong> — first-authored work on differentially private graph neural networks (DP-GNNs), outperforming existing privacy-utility benchmarks</li>
-                            <li>Re-architected compute-intensive ML experiments into distributed asynchronous systems, <strong>reducing execution time from 1.5 weeks to 1.5 days</strong> (90% improvement) by introducing <strong>CUDA acceleration</strong>, leveraging GPU parallelization</li>
-                            <li>Contributed documentation to the <strong>Opacus open-source library</strong> (Meta AI's DP-SGD framework) after deep research into its compatibility with graph-structured data</li>
-                            <li>Managed GPU workloads across local VMs and cloud environments under research deadlines; built reliable experiment pipelines with full version control</li>
+                            <li>Published research at <strong>IEEE International Conference on Big Data 2024</strong></li>
+                            <li><strong>Reduced execution time from 1.5 weeks to 1.5 days</strong> by introducing <strong>CUDA GPU acceleration</strong>, leveraging GPU parallelization</li>
+                            <li>Contributed to <strong>Meta AI's Opacus open-source library</strong></li>
                             <li>Implemented custom model-reconstruction attacks, then mitigated attack success rate from <strong>&gt;85% to 25%</strong> using differential privacy</li>
+                            <li>Managed GPU workloads across local VMs and cloud environments</li>
                         </ul>
-                        <div class="experience-tags">
-                            <span>PyTorch</span><span>CUDA</span><span>Opacus</span><span>DP-SGD</span><span>Graph Neural Networks</span><span>Distributed Training</span><span>Selenium</span><span>RAG</span>
-                        </div>
                     </div>
                 </article>
 
@@ -210,17 +185,11 @@
                             <span class="experience-company">Niagara Falls Convention</span>
                         </div>
                         <p class="experience-context">
-                            Sole developer and technical lead for a first-time convention's entire digital infrastructure — 
-                            from zero to launch in roughly two months, with ongoing support for a year.
+                            Sole developer and technical lead for a first-time convention's entire digital infrastructure
                         </p>
                         <ul class="experience-bullets">
-                            <li>Built and deployed the full event website end-to-end: domain, hosting, design, graphics — the organization's first-ever web presence</li>
-                            <li>Integrated a ticketing and vendor management system that <strong>generated over $30,000 in revenue</strong></li>
-                            <li>Provided ongoing technical support and maintenance for approximately one year post-launch through the convention date</li>
+                            <li>Built and deployed the full event website end-to-end: domain, hosting, design, graphics — the organization's first-ever web presence and <strong>generating over $30,000 in revenue</strong></li>
                         </ul>
-                        <div class="experience-tags">
-                            <span>Web Development</span><span>DNS &amp; Hosting</span><span>Ticketing Systems</span><span>Graphic Design</span>
-                        </div>
                     </div>
                 </article>
 
@@ -237,19 +206,12 @@
                             <h3 class="experience-title">Technical Analyst <span class="coop-badge">Co-op</span></h3>
                             <span class="experience-company">Ministry of Transportation &amp; Labour, Ontario</span>
                         </div>
-                        <p class="experience-context">
-                            Embedded with IT and business teams during an enterprise Microsoft Dynamics CRM deployment, 
-                            supporting the full development → UAT → production rollout cycle.
-                        </p>
                         <ul class="experience-bullets">
-                            <li>Supported end-to-end <strong>Microsoft Dynamics CRM deployment</strong> across dev, UAT, and production — collaborated with IT teams and business stakeholders on requirements and validation</li>
-                            <li>Validated and reconciled <strong>10,000+ records</strong> between CRM and SharePoint; documented discrepancies and produced corrective procedures used by the wider team</li>
-                            <li>Pulled and restructured financial data for <strong>senior management meetings</strong>, tracking millions in project spend and work allocation across ministries</li>
-                            <li>Administered user accounts, permissions, and role-based access controls across CRM and SharePoint; configured UI using <strong>Ribbon Workbench</strong></li>
+                            <li><strong>Microsoft Dynamics CRM development/deployment</strong> across dev, UAT, and production</li>
+                            <li>Validated and reconciled <strong>10,000+ records</strong> between CRM and SharePoint</li>
+                            <li>Pulled and restructured financial data for senior management meetings, <strong>tracking millions of dollars</strong> in project spending and work allocation across ministries</li>
+                            <li>Administered user accounts, permissions, and role-based access controls</li>
                         </ul>
-                        <div class="experience-tags">
-                            <span>Microsoft Dynamics CRM</span><span>SharePoint</span><span>Ribbon Workbench</span><span>Data Validation</span><span>SQL</span><span>Role-Based Access</span>
-                        </div>
                     </div>
                 </article>
 
@@ -266,9 +228,8 @@
                     <p class="publication-authors">Sager Kudrick, Renata Dividino</p>
                     <p class="publication-venue">IEEE International Conference on Big Data, Washington D.C., December 2024</p>
                     <p class="publication-description">
-                        Proposed a method for training subgraph-level DP-GNNs using disjoint subgraphs and DP-SGD, 
-                        preserving node and neighborhood privacy while maintaining model utility. Inspired by community 
-                        detection for graph partitioning; outperforms existing privacy-preserving GNN techniques.
+                        Research exploring graph clustering approaches for training differentially private message-passing GNNs —
+                        developed novel methods for preserving node and neighborhood privacy in graph-structured data.
                     </p>
                     <div class="publication-links">
                         <a href="https://ieeexplore.ieee.org/document/10825799" class="publication-link" target="_blank">IEEE Xplore</a>
@@ -281,8 +242,7 @@
                     <p class="publication-authors">Sager Kudrick, Renata Dividino</p>
                     <p class="publication-venue">Submitted to CAI 2024</p>
                     <p class="publication-description">
-                        Research exploring graph clustering approaches for training differentially private message-passing GNNs —
-                        developed novel methods for preserving node and neighborhood privacy in graph-structured data.
+                        Proposed a method for training subgraph-level DP-GNNs using disjoint subgraphs and DP-SGD, preserving node and neighborhood privacy while maintaining model utility. Implemented custom model reconstruction attacks to evaluate privacy guarantees, achieving a reduction in attack success rate from &gt;85% to 25% compared to non-private GNNs.
                     </p>
                 </article>
 
@@ -304,7 +264,7 @@
                             PyTorch model that predicts an object's rotation in 3D space from a single image, with predicted rotations fed to a real-time Reinforcement Learning agent to re-orientate the object upright.
                         </p>
                         <ul class="project-description">
-                            <li>Migrated PyTorch models to client-side <strong>ONNX Runtime Web with WebGPU acceleration</strong> — server-side inference costs ~$2.40 per 1,000 users and scales linearly; this approach brings marginal cost to near-zero regardless of volume</li>
+                            <li>Migrated server-side inference <strong>(~$2.40/1,000 users per hour; ~$2,600/month) to near zero</strong> through browser-based inference using ONNX Runtime Web + WebGPU</li> 
                             <li>Built synthetic data generation pipeline producing unlimited labeled training data, achieving <strong>&gt;95% rotation prediction accuracy</strong></li>
                             <li>Trained RL agent for real-time 3D object re-orientation with <strong>sub-100ms inference latency</strong></li>
                             <li>Containerized full training pipeline with Docker for scalable remote GPU deployment over SSH</li>
@@ -361,8 +321,8 @@
                         <div class="project-image pipeline-tall">
                             <video 
                                 src="images/chart_race.mp4"
-                                width="500"
-                                height="300"
+                                width="550"
+                                height="350"
                                 autoplay
                                 loop
                                 muted
@@ -451,9 +411,8 @@
                             Neural network training with formal Differential Privacy guarantees — preventing dataset reconstruction and membership inference attacks with mathematically provable bounds.
                         </p>
                         <ul class="project-description">
-                            <li>Implemented DP-SGD with gradient clipping and calibrated noise injection, achieving <strong>ε=5.0 privacy guarantee</strong> while maintaining &gt;95% accuracy on MNIST</li>
-                            <li>Baseline accuracy &gt;98% vs. DP-trained &gt;95% — minimal trade-off with formal guarantees against model inversion attacks</li>
-                            <li>Directly informed the privacy accounting and training methodology used in the published IEEE Big Data paper</li>
+                            <li>Baseline accuracy <strong>&gt;98%</strong> vs. DP-trained <strong>&gt;95%</strong> — minimal trade-off with formal privacy guarantees against model inversion attacks</li>
+                            <li>Directly informed the training methodology used in the published IEEE Big Data paper</li>
                         </ul>
                         <div class="tech-highlights">
                             <span class="tech-tag">Opacus (DP-SGD)</span>
@@ -477,14 +436,13 @@
                         <h3 class="project-title">3D Magazine Rendering Pipeline</h3>
                         <p class="project-tech">Python &bull; Blender &bull; Docker (Headless) &bull; Automation</p>
                         <p class="project-description">
-                            Automated pipeline converting vintage gaming magazines into animated 3D renders — fully headless, runs end-to-end from raw PDF to platform-optimized video without manual steps.
+                            Headless automated pipeline converting magazine images into animated 3D renders.
                         </p>
                         <ul class="project-description">
-                            <li>Scraped and processed PDFs into high-resolution textures for 3D mesh mapping</li>
-                            <li>Scripted Blender Python API to automate texture application, lighting, and camera animation</li>
-                            <li>Runs in a <strong>custom headless Docker container</strong> — fully automated, no manual steps after initial setup</li>
+                            <li>Scraped and processed PDFs into high-resolution textures</li>
+                            <li>Runs in a <strong>custom headless Docker container</strong></li>
                             <li>Generates platform-optimized exports for Instagram, Twitter, and TikTok</li>
-                            <li>OCR implementation to scan PDFs for specific text, streamlining targeted game and magazine selection</li>
+                            <li>OCR implementation to scan PDFs to find specific content to generate 3D renders for</li>
                         </ul>
                         <div class="tech-highlights">
                             <span class="tech-tag">Blender Python API</span>
@@ -512,12 +470,9 @@
                             Custom Counter-Strike gamemode with a full backend — live server, database, and web frontend built and managed entirely from scratch.
                         </p>
                         <ul class="project-description">
-                            <li>Developed the gamemode plugin in SourcePawn (.sp) using SourceMod, implementing 1v1 match logic, item stake handling, round flow and win validation.</li>
-                            <li>Set up and administered the <strong>Linux game server via SSH and FileZilla</strong> — handled deployment, file management, and live updates</li>
-                            <li>Designed and maintained a <strong>MySQL database</strong> tracking player stats, match history, and rankings with a PHP web frontend</li>
-                            <li>Used <strong>virtual machines to run multiple game clients simultaneously</strong> for testing match flows, edge cases, and database integrity across accounts</li>
-                            <li>Created <strong>stored procedures and triggers</strong> to automate common database operations and enforce data integrity and <strong>avoid SQL injections and common vulnerabilities</strong></li>
-                            <li><i>Project discontinued due to Steam Terms of Service changes restricting wagering mechanics</i></li>
+                            <li>Set up and administered the <strong>Linux server via SSH and FileZilla</strong></li>
+                            <li>Designed and maintained the <strong>MySQL database</strong> and created <strong>stored procedures and triggers</strong> to automate common database operations and enforce data integrity and <strong>avoid SQL injections and common vulnerabilities</strong></li>
+                            <li>Used <strong>virtual machines to run multiple clients simultaneously</strong></li>
                         </ul>
                         <div class="tech-highlights">
                             <span class="tech-tag">C# / SourceMod</span>
@@ -611,8 +566,8 @@
         <div class="container">
             <div class="footer-content">
                 <h3 class="footer-title">Let's Work Together</h3>
-                <p class="footer-text">Open to full-time roles in DevOps, ML engineering, software development, or security. Based in St. Catharines, ON — open to remote.</p>
+                <p class="footer-text">Open to full-time roles in DevOps, ML engineering, software development, or security.</p>
                 <div class="footer-links">
-                    <a href="/cdn-cgi/l/email-protection#136072747661786677617a707853747e727a7f3d707c7e" class="contact-link">Get In Touch</a>
+                    <a href="mailto:sagerkudrick@gmail.com" class="contact-link">Get In Touch</a>
                     <!-- <a href="/resume.pdf" class="contact-link" target="_blank">Download Resume</a> -->
           
