@@ -526,7 +526,8 @@ h1 {
     background: transparent;
 }
 
-.project-image img {
+.project-image img,
+.project-image video {
     display: block;
     width: 100%;
     height: 100%;
@@ -544,7 +545,8 @@ h1 {
     max-height: 600px;
 }
 
-.project-image.pipeline-tall img {
+.project-image.pipeline-tall img,
+.project-image.pipeline-tall video {
     max-height: 600px;
 }
 
@@ -1552,5 +1554,43 @@ footer {
     .exp-col .experience-card {
         grid-template-columns: 160px 1fr;
         gap: 0 2.5rem;
+    }
+}
+
+/* ─── Mobile overrides (must be last to beat exp-col specificity) ─── */
+@media (max-width: 768px) {
+    /* Experience: drop the two-column meta/content layout entirely */
+    .exp-col .experience-card,
+    .experience-card {
+        grid-template-columns: 1fr;
+        gap: 0.3rem;
+    }
+
+    .experience-meta {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.75rem;
+        text-align: left;
+        padding-top: 0;
+    }
+
+    .experience-content {
+        padding-left: 0;
+        border-left: none;
+        border-top: 2px solid var(--border);
+        padding-top: 0.8rem;
+    }
+
+    .experience-card:hover .experience-content {
+        border-top-color: var(--accent);
+        border-left-color: transparent;
+    }
+
+    /* Cap tall media on mobile */
+    .project-image.pipeline-tall,
+    .project-image.pipeline-tall img,
+    .project-image.pipeline-tall video {
+        max-height: 280px;
     }
 }
